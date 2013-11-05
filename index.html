@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+ _____   _   _   _____   _   _         _   _____   _____ 
+|  ___| | | | | /  ___| | | / /       | | | ____| /  ___|
+| |__   | | | | | |     | |/ /        | | | |__   | |___  
+|  __|  | | | | | |     | |\ \        | | |  __|  |  _  \ 
+| |     | |_| | | |___  | | \ \       | | | |___  | |_| | 
+|_|     \_____/ \_____| |_|  \_\      |_| |_____| \_____/ 
+
+(#‵′)凸  fuck IE6!
+ -->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fuck! IE6</title>
+        <meta name="description" content="让我们一起干掉IE6！">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nosifer">
+        <link rel="stylesheet" href="css/fontello.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="css/fontello-ie7.css">
+        <![endif]-->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser!</p>
+        <![endif]-->
+
+        <header>
+            <hgroup>
+                <h1>Fuck! IE6</h1>
+                <h2>Fuck! IE6 and Hug HTML5</h2>
+            </hgroup>
+        </header>
+
+        <div class="browser-wrap">
+            <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="下载IE10" target="_blank" class="btn b-ie" >
+                    <i class="icon-ie"></i>
+                    <span class="icon-download"></span>
+                    <p>You're in for a surprise</p>
+            </a>
+            <a href="https://www.google.com/intl/zh-CN/chrome/browser/" title="下载Chrome" target="_blank" class="btn b-chrome">
+                    <i class="icon-chrome"></i>
+                    <span class="icon-download"></span>
+                    <p>Get a fast, free web browser</p>
+            </a>
+            <a href="http://firefox.com.cn/download/" title="下载Firefox" target="_blank" class="btn b-firefox">
+                    <i class="icon-firefox"></i>
+                    <span class="icon-download"></span>
+                    <p>Different by design</p>
+            </a>
+            <a href="http://www.opera.com/zh-cn/" title="下载Opera" target="_blank" class="btn b-opera">
+                    <i class="icon-opera"></i>
+                    <span class="icon-download"></span>        
+                    <p>The fast and free alternative web browser</p>
+            </a>
+        </div>
+
+        <div class="content">
+
+            <h2>世界上只有两种浏览器 - <span class="col-red">IE6浏览器</span> 和 <span class="col-green">非IE6浏览器</span>！</h2>
+            <canvas id="pieArea" height="300" width="300" title=""></canvas>
+
+            <h2>为什么要干掉<span class="col-red">IE6</span></h2>
+            <ol>
+                <li>
+                    <h3>1. 存在严重安全<span class="col-red">漏洞</span></h3>
+                    <em class="why-1"></em>
+                    <p>谷歌、雅虎等其他20多家公司都遭到了黑客的攻击，而黑客所利用的则是IE中的漏洞。</p>
+                </li>
+                <li>
+                    <h3>2. 微软停止<span class="col-red">维护</span>更新</h3>
+                    <em class="why-2"></em>
+                    <p>微软在其安全研究和防御博客中指出，为了避免受到攻击的风险，用户最好能够升级IE浏览器。</p>
+                </li>
+                <li>
+                    <h3>3. 大量新特性都<span class="col-red">不支持</span></h3>
+                    <em class="why-3"></em>
+                    <p>IE6无法支持新技术，为了照顾它，我们不得不 含泪抹杀掉新创意，新想法，新技术。</p>
+                </li>
+                <li>
+                    <h3>4. 太<span class="col-red">老</span>，太<span class="col-red">慢</span>了</h3>
+                    <em class="why-4"></em>
+                    <p>在这个软硬件飞速更新的时代，IE6的速度和效率极慢极低，在开发人员中已经久负盛名。</p>
+                </li>
+            </ol>
+
+         </div>
+
+    <footer title="分享给你身边的人，一起干掉IE6">
+            <div class="bdlikebutton"></div>
+    </footer>
+
+    <script src="http://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+    //Data
+    var pieData = [
+    {
+        value: 93.7,
+        color:"#00b5e5"
+    },
+    {
+        value : 6.3,
+        color : "#CA3C3C"
+    }];
+    var myPie = new Chart(document.getElementById("pieArea").getContext("2d")).Pie(pieData);
+    </script>
+    <script id="bdlike_shell"></script>
+    <script>
+    var bdShare_config = {
+        "type":"large",
+        "color":"blue",
+        "uid":"689943",
+        "likeText":"Fuck IE6 !",
+        "likedText":"您已Fuck，谢谢！",
+        "share":"yes"
+    };
+    document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+    </script>
+    </body>
+</html>
